@@ -1,68 +1,176 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Rifal Alsulami | Portfolio</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f6f8;
+      color: #222;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #222, #555);
+      color: white;
+      padding: 40px;
+      border-radius: 16px;
+      text-align: center;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    .header p {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    .section {
+      background-color: white;
+      padding: 30px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 28px;
+      border-left: 5px solid #555;
+      padding-left: 12px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+      background-color: #ffffff;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .card a:hover {
+      color: #0066cc;
+    }
+
+    .footer {
+      text-align: center;
+      color: #777;
+      margin-top: 25px;
+      font-size: 14px;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin:40px;">
 
-  <h1>Rifal Alsulami</h1>
-  <p>CPIT405 – Web Development Portfolio</p>
+<body>
 
-  <hr>
+  <div class="container">
 
-  <h2>Labs</h2>
+    <div class="header">
+      <h1>Rifal Alsulami</h1>
+      <p>CPIT405 – Web Development Portfolio</p>
+    </div>
 
-  <ul>
-    <li>
-      <a href="https://rifalalsulami.github.io/CPIT405_Lab1/" target="_blank">
-        Lab 1 – Introduction & Setup
-      </a>
-    </li>
+    <div class="section">
+      <h2>Labs</h2>
 
-    <li>
-      <a href="https://rifalalsulami.github.io/CPIT405_Lab2/" target="_blank">
-        Lab 2 – HTML Structure
-      </a>
-    </li>
-    
-    <li>
-      <a href="https://rifalalsulami.github.io/CPIT405_Lab3/" target="_blank">
-        Lab 3 – CSS Structure and Properties
-      </a>
-    </li>
+      <div class="cards">
 
-    <li>
-      <a href="https://rifalalsulami.github.io/CPIT405_Lab4/" target="_blank">
-        Lab 4 – CSS Structure and Properties (Order Form)
-      </a>
-    </li>
+        <div class="card">
+          <a href="https://rifalalsulami.github.io/CPIT405_Lab1/" target="_blank">
+            Lab 1 – Introduction & Setup
+          </a>
+        </div>
 
-    <li>
-      <a href="https://rifalalsulami.github.io/CPIT405_Lab5/" target="_blank">
-        Lab 5 – DOM API and JS Events
-      </a>
-    </li>
+        <div class="card">
+          <a href="https://rifalalsulami.github.io/CPIT405_Lab2/" target="_blank">
+            Lab 2 – HTML Structure
+          </a>
+        </div>
 
-    <li>
-      <a href="https://rifalalsulami.github.io/CPIT405_Lab6/" target="_blank">
-        Lab 6 – JavaScript (Like/Dislike & Cookies)
-      </a>
-    </li>
+        <div class="card">
+          <a href="https://rifalalsulami.github.io/CPIT405_Lab3/" target="_blank">
+            Lab 3 – CSS Structure and Properties
+          </a>
+        </div>
 
-  </ul>
+        <div class="card">
+          <a href="https://rifalalsulami.github.io/CPIT405_Lab4/" target="_blank">
+            Lab 4 – CSS Structure and Properties
+          </a>
+        </div>
 
-  <hr>
+        <div class="card">
+          <a href="https://rifalalsulami.github.io/CPIT405_Lab5/" target="_blank">
+            Lab 5 – DOM API and JS Events
+          </a>
+        </div>
 
-  <h2>Assignments</h2>
+        <div class="card">
+          <a href="https://rifalalsulami.github.io/CPIT405_Lab6/" target="_blank">
+            Lab 6 – JavaScript & Cookies
+          </a>
+        </div>
 
-  <ul>
-    <li>
-      <a href="https://rifalalsulami.github.io/cpit405-assignment1/" target="_blank">
-        Assignment 1 – Personal Website
-      </a>
-    </li>
-  </ul>
+        <div class="card">
+          <a href="https://rifalalsulami.github.io/CPIT405_Lab7/" target="_blank">
+            Lab 7 – Ajax & Unsplash API
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Assignments</h2>
+
+      <div class="cards">
+        <div class="card">
+          <a href="https://rifalalsulami.github.io/cpit405-assignment1/" target="_blank">
+            Assignment 1 – Personal Website
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>© 2026 Rifal Alsulami | CPIT405 Portfolio</p>
+    </div>
+
+  </div>
 
 </body>
 </html>
